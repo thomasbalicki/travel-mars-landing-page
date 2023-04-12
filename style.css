@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  color: white;
+  z-index: 2;
+  position: relative;
+  padding: 4rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  padding-right: .5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    padding: 2rem 1rem;
+    /* change the padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: .5rem;
+    /* change the padding for smaller screens */
+  }
+}
+
+.title {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: 3rem;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -25%);
+  background: linear-gradient(to right, #c62121, #ff6600, #ffd83a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.429);
+  white-space: nowrap;
+}
+
+/* @media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem;
+  }
+} */
+
+.slogan {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -25%);
+}
+
+footer {
+  color: #f2f2f2;
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8em;
+}
